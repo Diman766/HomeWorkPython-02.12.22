@@ -35,19 +35,16 @@ k -= 1
 
 while k >= 0:
     if k == 1:
-        randomNumber = str(result[-k-1])
-        string = '+' + randomNumber + '*x'
-        stringResult += string
+        number = str(result[-k-1])
+        stringResult += '+' + number + '*x'
         k -= 1
     elif k == 0:
-        randomNumber = str(result[-k-1])
-        string = '+' + randomNumber 
-        stringResult += string
+        number = str(result[-k-1])
+        stringResult += '+' + number 
         k -= 1
     elif k > 1:
-        randomNumber = str(result[-k-1])
-        string = '+' + randomNumber + '*x**' + str(k)
-        stringResult += string
+        number = str(result[-k-1])
+        stringResult += '+' + number + '*x**' + str(k)
         k -= 1
 print(stringResult)
 
