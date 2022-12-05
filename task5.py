@@ -29,8 +29,7 @@ result.reverse()
 
 k = len(result)-1
 number = str(result[0])
-string = number + '*x**' + str(k)
-stringResult = string
+stringResult = number + '*x**' + str(k)
 k -= 1
 
 while k >= 0:
