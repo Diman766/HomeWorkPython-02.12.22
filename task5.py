@@ -19,7 +19,8 @@ def sortString (string):
         string[i] = string[i][:1]
 
     string = [x for l in string for x in l]
-    string = [int(string[i]) for i in range(len(string))]
+    string = list(map(int, string))
+    # string = [int(string[i]) for i in range(len(string))]
     string.reverse()
     return string
 
